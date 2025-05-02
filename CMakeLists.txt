@@ -31,15 +31,15 @@ find_package(Vulkan REQUIRED)
 
 # Get system libraries that can't be handled by find_package()
 # syntax is: variable, folder library and file library, Absolute path of where the library install is
-find_path(GLM_INCLUDE_DIR glm/glm.hpp
-    PATHS "C:/VulkanSDK/1.4.309.0/Include"
+find_path(GLM_INCLUDE_DIR glm.hpp
+    PATHS "C:/VulkanSDK/1.4.309.0/Include/glm"
     REQUIRED
 )
 
 # GLFW3 Example inclusion
 # NOTE: Since 1.4.309.0 glfw folder does not exist under the SDK.
-find_path(GLFW_INCLUDE_DIR glfw/glfw3.h
-    PATHS "C:/GLFW3/Include"
+find_path(GLFW_INCLUDE_DIR glfw3.h
+    PATHS "C:/GLFW3/Include/glfw"
     REQUIRED
 )
 
